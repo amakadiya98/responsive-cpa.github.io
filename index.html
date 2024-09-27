@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Georgia CPA | Accounting Services</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6D7WPQX833"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-6D7WPQX833');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Apply box-sizing globally */
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0a672;
+            color: #333;
+            max-width: 100%;
+            overflow-x: hidden; /* Prevent horizontal overflow */
+        }
+    
+        /* Header Section */
+        header {
+            background-color: #62BEC1;
+            padding: 0 10px; /* Minimal padding */
+            display: flex;
+            align-items: center; /* Vertically center content */
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            height: 80px; /* Set a fixed height */
+            margin-bottom: 0;
+            box-shadow: 0 4px 6px rgba(120, 120, 120, 0.4);
+        }
+
+        header img {
+            /* max-height: 200px; Ensure the logo fits within the header height */
+            height: auto;
+            width: auto;
+            margin-right: 10px;
+            width: 140px;
+            max-width: 140px;
+        }
+
+        .header-statement {
+            font-size: 1.2rem;
+            color: white;
+            font-weight: 600;
+            padding: 0;
+            text-align: center;
+            flex-grow: 1;
+            word-wrap: break-word;
+            max-width: 100%;
+            line-height: 1.2; /* Reduce line height */
+            margin: 0 10px;
+            text-transform: capitalize;
+        }
+
+
+    
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 8px;
+        }
+    
+        /* Navigation Section */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 10;
+            position: relative;
+            margin: 0; /* Remove margin */
+           
+        }
+        nav .link-part{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    
+        /* Content Sections */
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+    
+        /* Unified Service and Form Section Styling */
+        .service-section, .form-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            background-color: #fff;
+            margin: 20px auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            width: 100%; 
+            text-align: left;
+            border: 2px solid #62BEC1;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+    
+        /* Service Section Specifics */
+        .service-section h2 {
+            color: #EB5757;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 0;
+        }
+    
+        .snippet {
+            font-style: italic;
+            color: #FFBF69;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+    
+        .service-section p {
+            color: #333;
+            font-size: 1.2rem;
+            max-width: 90%;
+        }
+    
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    
+        ul {
+            /* color: #5C7AEA; */
+            color: #4e9fa2;
+            font-size: 1.1rem;
+        }
+    
+        .service-text {
+            flex: 1;
+        }
+    
+        .service-icon {
+            /* flex: 0 0 150px; */
+            text-align: right;
+        }
+    
+        .service-icon img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 20px;
+            border: 2px solid #f0a672;
+        }
+    
+        /* Intro Section */
+        .intro-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0 20px;
+            gap: 40px;
+        }
+    
+        .intro-box {
+            background-color: #62BEC1;
+            color: white;
+            padding: 40px;
+            padding-bottom: 0;
+            border-radius: 20px;
+            flex: 1;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 2px solid white;
+        }
+    
+        .intro-box h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+    
+        #services {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    
+        /* Form Section Specifics */
+        .form-section h2 {
+            color: #EB5757;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 0;
+            width: 100%;
+        }
+    
+        /* Form layout */
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        /* Form input fields and textarea */
+        .form-section input,
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+        }
+    
+        /* Textarea specifics */
+        .form-section textarea {
+            resize: vertical;
+            height: 150px;
+        }
+    
+        /* Form button styling */
+        .form-section button {
+            background-color: #62BEC1;
+            color: white;
+            padding: 10px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.2s;
+        }
+        .form-section button:hover{
+            background-color: #57aaad;
+        }
+
+        footer {
+            background-color: #FF6464;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+    
+        footer p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        footer p a{
+            color: #fff;
+            white-space: nowrap;
+        }
+        footer p a:hover{
+            color: #e4e4e4;
+        }
+    
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 1250px) {
+            .header-container, .intro-container,.service-section, .form-section, nav .link-part {
+                max-width: 90%;
+            }
+            section{
+                padding: 40px 0;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                text-align: center;
+            }
+    
+            header img {
+                max-height: 50px;
+                margin-bottom: 10px;
+            }
+    
+            .header-statement {
+                font-size: 1rem;
+                max-width: 90%;
+                line-height: 1.4rem;
+            }
+    
+            .form-section,
+            .service-section {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            .intro-container{
+                gap: 0px;
+                padding: 20px 0 0;
+            }
+            .intro-box h2, .service-section h2{
+                font-size: 2rem;
+            }
+            .service-text, .service-icon {
+                max-width: 100%;
+            }
+    
+            .service-icon {
+                margin: 20px 0;
+                text-align: center;
+            }
+    
+            .intro-box {
+                flex-basis: 100%;
+                margin: 20px 0;
+                padding: 20px;
+            }
+    
+            .form-section input,
+            .form-section textarea {
+                width: 100%;
+                padding: 10px;
+            }
+    
+            .form-section button {
+                width: 100%;
+            }
+            footer p{
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+        @media screen and (max-width: 660px) {
+            .header-container, .intro-container, .service-section, .form-section{
+                max-width: 96%;
+            }
+            .header-container{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            header{
+                height: auto;
+                padding: 10px 0;
+            }
+            .header-statement{
+                font-size: 0.8rem;
+                max-width: 100%;
+                line-height: 1rem;
+                margin: 0;
+            }
+            header img{
+                margin: 0;
+            }
+            nav .link-part{
+                justify-content: space-between;
+            }
+            .intro-container{
+                gap: 20px;
+            }
+            .intro-box{
+                margin: 0px 0 00px;
+            }
+            .service-text{
+                flex: auto;
+            }
+            nav a{
+                font-size: 0.9rem;
+            }
+            .service-section p, ul{
+                font-size: 1rem;
+            }
+            .intro-box h2, .service-section h2 {
+                font-size: 1.5rem;
+            }
+            .service-icon{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            nav .link-part{
+                gap: 6px;
+                max-width: 100%;
+            }
+        }
+        @media screen and (max-width: 375px) {
+            header img{
+                width: 100px;
+                max-width: 100px;
+            }
+            .header-statement{
+                font-size: 0.7rem;
+                line-height: 0.9rem;
+            }
+            nav{
+                gap: 4px;
+            }
+            nav a{
+                font-size: 0.8rem;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="the georgia cpa.png" alt="The Georgia CPA Logo">
+            <div class="header-statement">
+                Offering a range of services to small and medium-sized businesses, both locally and remotely
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="link-part">
+        <a href="#who-we-help">Who We Help</a>
+        <a href="#services">Our Services</a>
+        <a href="#project-work">Project Work</a>
+        <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Intro Section: Two Boxes Side by Side -->
+    <section class="intro-container" id="who-we-help">
+        <div class="intro-box">
+            <h2>Who We Help</h2>
+            <p>Are you starting a small business or already running one? Do you need help managing your finances, staying compliant with tax laws, or setting a long-term financial strategy?</p>
+            <p>At The Georgia CPA, we specialize in helping small business owners and startups establish sound financial practices, so they can focus on growing their businesses. Whether you're in Atlanta or managing your business remotely, we're here to assist.</p>
+            <p>Plus, hablamos español. We offer services in both English and Spanish to better serve the needs of our diverse community.</p>
+        </div>
+
+        <div class="intro-box">
+            <h2>How It Works</h2>
+            <p>We offer a **free initial consultation** for all new clients. Whether you have a small project or need ongoing financial management, we’ve got you covered.</p>
+            <p>Our rates are **transparent and straightforward**—you can choose either an hourly rate or a fixed monthly rate, with no hidden fees. We believe in clear, upfront pricing.</p>
+            <p>From day one, you'll know exactly what to expect, and we'll guide you through every step of your financial journey.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <!-- Service Category 1 -->
+        <div class="service-section">
+            <div class="service-text">
+                <h2>Basic Accounting & Bookkeeping</h2>
+                <p class="snippet">Keeping your business finances organized and up-to-date.</p>
+                <p>Accurate bookkeeping is the foundation of any successful business. It ensures that your financials are always in order, helping you avoid costly errors and stay compliant with laws.</p>
+                <ul>
+                    <li>Transaction Recording</li>
+                    <li>Account Reconciliation</li>
+                    <li>Monthly Financial Statements</li>
+                    <li>Expense Management</li>
+                    <li>Custom Financial Reports</li>
+                </ul>
+            </div>
+            <div class="service-icon">
+                <img src="accounting.png" alt="Accounting Icon">
+            </div>
+        </div>
+
+        <!-- Service Category 2 -->
+        <div class="service-section">
+            <div class="service-text">
+                <h2>Payroll Services</h2>
+                <p class="snippet">Pay your team on time, every time, without the hassle.</p>
+                <p>Managing payroll can be a time-consuming and complex task, especially with frequent changes in tax laws and regulations. Payroll errors can result in penalties and dissatisfied employees.</p>
+                <ul>
+                    <li>Payroll Processing</li>
+                    <li>Direct Deposit Setup</li>
+                    <li>Tax Withholdings and Filing</li>
+                    <li>Employee Benefits Management</li>
+                    <li>Year-End Tax Statements</li>
+                </ul>
+            </div>
+            <div class="service-icon">
+                <img src="payroll.png" alt="Payroll Icon">
+            </div>
+        </div>
+
+        <!-- Service Category 3 -->
+        <div class="service-section">
+            <div class="service-text">
+                <h2>Financial Compilation</h2>
+                <p class="snippet">Get professional, compiled financial statements for stakeholders.</p>
+                <p>Compiled financial statements are essential for presenting an accurate financial picture of your business to stakeholders, investors, or lenders. Regular financial reviews ensure you’re staying on the right track.</p>
+                <ul>
+                    <li>Compiled Financial Statements</li>
+                    <li>Quarterly/Annual Reports</li>
+                    <li>Financial Projections</li>
+                    <li>Budgeting and Forecasting</li>
+                </ul>
+            </div>
+            <div class="service-icon">
+                <img src="compilation.png" alt="Compilation Icon">
+            </div>
+        </div>
+
+        <!-- Service Category 4 -->
+        <div class="service-section">
+            <div class="service-text">
+                <h2>Tax Preparation & Filing</h2>
+                <p class="snippet">Optimize your business taxes with a long-term strategy.</p>
+                <p>Filing taxes for a business is no small feat. Missing a deduction or incorrectly reporting income can cost you valuable resources. Tax planning is essential to minimize liabilities and maximize savings.</p>
+                <ul>
+                    <li>Business Tax Filing</li>
+                    <li>Tax Strategy Development</li>
+                    <li>Tax Deductions & Credit Optimization</li>
+                    <li>Quarterly Tax Estimates</li>
+                    <li>IRS Compliance & Support</li>
+                </ul>
+            </div>
+            <div class="service-icon">
+                <img src="tax.png" alt="Tax Icon">
+            </div>
+        </div>
+
+        <!-- Service Category 5 -->
+        <div class="service-section">
+            <div class="service-text">
+                <h2>Data Analytics & Business Insights</h2>
+                <p class="snippet">Data-driven decisions to help your business grow.</p>
+                <p>In a world driven by data, businesses that fail to harness the power of analytics are at a competitive disadvantage. Financial data can reveal key insights into your business's performance.</p>
+                <ul>
+                    <li>Custom Financial Dashboards</li>
+                    <li>Key Performance Indicator (KPI) Tracking</li>
+                    <li>Financial Trend Analysis</li>
+                    <li>Scenario Planning & Forecasting</li>
+                    <li>Business Optimization Strategies</li>
+                </ul>
+            </div>
+            <div class="service-icon">
+                <img src="data.png" alt="Data Icon">
+            </div>
+        </div>
+
+    <!-- Project-Based Work Section - now styled as a service-section -->
+        <div class="service-section" id="project-work">
+            <div class="service-text">
+                <h2>Project Work for Businesses</h2>
+                <p>At The Georgia CPA, we are experts in handling complex projects, providing specialized accounting, financial planning, and data analytics solutions for medium-sized businesses.</p>
+                <p>Whether you're looking for help with dynamic forecasting, profitability analysis, or detailed cash flow projections, we can deliver the insights your business needs to succeed.</p>
+                <p>Our projects range from the smallest ad-hoc reports to full-scale strategic financial planning and modeling, all tailored to your specific needs.</p>
+                <ul>
+                    <li>Dynamic Forecasting and Projections</li>
+                    <li>Cash Flow Forecasting</li>
+                    <li>Customer Profitability and Trends Analysis</li>
+                    <li>Commissions and Salesforce Performance Analysis</li>
+                    <li>Inventory Changes and Product Profitability</li>
+                    <li>Scenario Planning and Financial Ratio Analysis</li>
+                </ul>
+            </div>
+            <div class="service-icon">
+                <img src="project.png" alt="Project Icon">
+            </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section" id="contact-form">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/movaorvv" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message/Question</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <p>Contact us at: <a href="mailto: info@thegeorgiacpa.com">info@thegeorgiacpa.com</a> | <a href="tel: 5743671936">574-367-1936</a> | © 2024 The Georgia CPA</p>
+    </footer>
+
+</body>
+
+</html>
+
+
