@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Georgia CPA | Accounting Services</title>
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6D7WPQX833"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-6D7WPQX833');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6D7WPQX833');
+
+
+
     </script>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        /* General Reset */
         /* Apply box-sizing globally */
         * {
             box-sizing: border-box;
         }
-    
+
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -30,21 +34,26 @@
             background-color: #f0a672;
             color: #333;
             max-width: 100%;
-            overflow-x: hidden; /* Prevent horizontal overflow */
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            /* Prevent horizontal overflow */
         }
-    
+
         /* Header Section */
         header {
             background-color: #62BEC1;
-            padding: 0 10px; /* Minimal padding */
+            padding: 0 10px;
+            /* Minimal padding */
             display: flex;
-            align-items: center; /* Vertically center content */
+            align-items: center;
+            /* Vertically center content */
             justify-content: space-between;
             position: sticky;
             top: 0;
             z-index: 1000;
             width: 100%;
-            height: 80px; /* Set a fixed height */
+            height: 80px;
+            /* Set a fixed height */
             margin-bottom: 0;
             box-shadow: 0 4px 6px rgba(120, 120, 120, 0.4);
         }
@@ -67,13 +76,14 @@
             flex-grow: 1;
             word-wrap: break-word;
             max-width: 100%;
-            line-height: 1.2; /* Reduce line height */
+            line-height: 1.2;
+            /* Reduce line height */
             margin: 0 10px;
             text-transform: capitalize;
         }
 
 
-    
+
         .header-container {
             display: flex;
             align-items: center;
@@ -83,7 +93,7 @@
             margin: 0 auto;
             gap: 8px;
         }
-    
+
         /* Navigation Section */
         nav {
             background-color: #333;
@@ -92,30 +102,34 @@
             text-align: center;
             z-index: 10;
             position: relative;
-            margin: 0; /* Remove margin */
-           
+            margin: 0;
+            /* Remove margin */
+
         }
-        nav .link-part{
+
+        nav .link-part {
             max-width: 1200px;
             margin: auto;
             display: flex;
             justify-content: center;
             gap: 40px;
         }
+
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 14px;
         }
-    
+
         /* Content Sections */
         section {
             padding: 40px;
             text-align: center;
         }
-    
+
         /* Unified Service and Form Section Styling */
-        .service-section, .form-section {
+        .service-section,
+        .form-section {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -125,14 +139,14 @@
             border-radius: 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             max-width: 1200px;
-            width: 100%; 
+            width: 100%;
             text-align: left;
             border: 2px solid #62BEC1;
             flex-wrap: wrap;
             box-sizing: border-box;
             overflow: hidden;
         }
-    
+
         /* Service Section Specifics */
         .service-section h2 {
             color: #EB5757;
@@ -140,48 +154,48 @@
             font-weight: bold;
             margin-top: 0;
         }
-    
+
         .snippet {
             font-style: italic;
             color: #FFBF69;
             margin-bottom: 10px;
             font-size: 1rem;
         }
-    
+
         .service-section p {
             color: #333;
             font-size: 1.2rem;
             max-width: 90%;
         }
-    
+
         .services-container {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
         }
-    
+
         ul {
             /* color: #5C7AEA; */
             color: #4e9fa2;
             font-size: 1.1rem;
         }
-    
+
         .service-text {
             flex: 1;
         }
-    
+
         .service-icon {
             /* flex: 0 0 150px; */
             text-align: right;
         }
-    
+
         .service-icon img {
             max-width: 200px;
             height: auto;
             border-radius: 20px;
             border: 2px solid #f0a672;
         }
-    
+
         /* Intro Section */
         .intro-container {
             display: flex;
@@ -192,7 +206,7 @@
             padding: 40px 0 20px;
             gap: 40px;
         }
-    
+
         .intro-box {
             background-color: #62BEC1;
             color: white;
@@ -201,22 +215,26 @@
             border-radius: 20px;
             flex: 1;
             text-align: left;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border: 2px solid white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            transition: 0.3s all;
         }
-    
+
+        .intro-box:hover {
+            scale: 0.98;
+        }
+
         .intro-box h2 {
-            font-size: 2.5rem;
+            font-size: 28px;
             font-weight: bold;
             margin-bottom: 20px;
             margin-top: 0;
         }
-    
+
         #services {
             padding-top: 0;
             padding-bottom: 0;
         }
-    
+
         /* Form Section Specifics */
         .form-section h2 {
             color: #EB5757;
@@ -226,14 +244,14 @@
             margin-top: 0;
             width: 100%;
         }
-    
+
         /* Form layout */
         .form-section form {
             display: flex;
             flex-direction: column;
             width: 100%;
         }
-    
+
         /* Form input fields and textarea */
         .form-section input,
         .form-section textarea {
@@ -246,13 +264,13 @@
             box-sizing: border-box;
             margin-bottom: 16px;
         }
-    
+
         /* Textarea specifics */
         .form-section textarea {
             resize: vertical;
             height: 150px;
         }
-    
+
         /* Form button styling */
         .form-section button {
             background-color: #62BEC1;
@@ -266,7 +284,8 @@
             width: 100%;
             transition: all 0.2s;
         }
-        .form-section button:hover{
+
+        .form-section button:hover {
             background-color: #57aaad;
         }
 
@@ -280,164 +299,397 @@
             width: 100%;
             margin-top: 40px;
         }
-    
+
         footer p {
             margin: 0;
             font-size: 1.2rem;
         }
-        footer p a{
+
+        footer p a {
             color: #fff;
             white-space: nowrap;
         }
-        footer p a:hover{
+
+        footer p a:hover {
             color: #e4e4e4;
         }
-        .social-media{
+
+
+        /* servicesPart section*/
+        .servicesPart-section {
+            padding-top: 50px;
+        }
+
+        .servicesButton {
+            padding: 20px 40px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            background-color: #62BEC1;
+        }
+
+        .servicesButton h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 16px 0;
+        }
+
+        .servicesButton p {
+            color: #ffffff;
+        }
+
+        .buttonPart {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .servicesButton button {
+            background-color: #ffffff;
+            color: #000000;
+            border: 2px solid #62BEC1;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 14px;
+            font-size: 16px;
+        }
+
+        .servicesButton button:hover {
+            background-color: #62BEC1;
+            border: 2px solid #ffffff;
+        }
+
+        .Serve-servicelist {
+            padding: 20px 40px;
+            background-color: #62BEC1;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border: 2px solid #62BEC1;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-bottom: 50px;
+        }
+
+        .servicesPart-section .Serve-servicelist h6 {
+            color: #ffffff;
+        }
+
+        .servicesPart-section .Serve-servicelist ul {
+            color: #ffffff;
+        }
+
+        .servicesContainer {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .servicesPart {
+            width: 100%;
+            padding: 20px 40px 0 40px;
+            background: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border: 2px solid #62BEC1;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            overflow: hidden;
+            text-align: start;
+        }
+
+        .servicesPart ul li {
+            padding-bottom: 10px;
+        }
+
+        .sublist {
+            color: black;
+        }
+
+        .servicesPart p {
+            font-style: italic;
+            color: black;
+        }
+
+        .servicesPart h5 {
+            color: #EB5757;
+            font-weight: 700;
+            font-size: 32px;
+            margin: 30px 0;
+        }
+
+        .servicesPart-section h6 {
+            color: black;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 0px;
+        }
+
+        .serviceList {
+            margin-bottom: 30px;
+        }
+
+        .serviceList-imgpart {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        .social-media {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
         }
-        .social-media a{
+        .social-media a {
             text-decoration: none;
         }
-    
+
         /* Media Queries for responsiveness */
         @media screen and (max-width: 1250px) {
-            .header-container, .intro-container,.service-section, .form-section, nav .link-part {
+
+            .header-container,
+            .intro-container,
+            .service-section,
+            .form-section,
+            .servicesContainer,
+            nav .link-part {
                 max-width: 90%;
             }
-            section{
+
+            section {
                 padding: 40px 0;
             }
         }
+
         @media (max-width: 768px) {
+            .serviceList-imgpart {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: start;
+            }
+
+            .servicesButton {
+                padding: 20px 20px;
+            }
+
+            .servicesPart {
+                padding: 0 20px;
+            }
+
+            .Serve-servicelist {
+                margin-bottom: 20px;
+            }
+
+            .Serve-servicelist {
+                padding: 20px;
+            }
+
+            .serviceList {
+                margin-bottom: 14px;
+            }
+
+            .tab {
+                text-align: center;
+                padding: 14px;
+                font-size: 20px;
+            }
+
+            .tab-bar {
+                border-radius: 16px;
+                margin-bottom: 10px;
+            }
+
+            .servicesPart h5 {
+                font-size: 28px;
+                margin: 20px 0;
+            }
+
+            .servicesPart h6 {
+                font-size: 18px;
+            }
+
             .header-container {
                 text-align: center;
             }
-    
+
             header img {
                 max-height: 50px;
                 margin-bottom: 10px;
             }
-    
+
             .header-statement {
                 font-size: 1rem;
                 max-width: 90%;
                 line-height: 1.4rem;
             }
-    
+
             .form-section,
             .service-section {
                 padding: 20px;
                 margin: 20px auto;
             }
-            .intro-container{
+
+            .intro-container {
                 gap: 0px;
                 padding: 20px 0 0;
             }
-            .intro-box h2, .service-section h2{
+
+            .intro-box h2,
+            .service-section h2 {
                 font-size: 2rem;
             }
-            .service-text, .service-icon {
+
+            .service-text,
+            .service-icon {
                 max-width: 100%;
             }
-    
+
             .service-icon {
                 margin: 20px 0;
                 text-align: center;
             }
-    
+
             .intro-box {
                 flex-basis: 100%;
                 margin: 20px 0;
                 padding: 20px;
             }
-    
+
             .form-section input,
             .form-section textarea {
                 width: 100%;
                 padding: 10px;
             }
-    
+
             .form-section button {
                 width: 100%;
             }
-            footer p{
+
+            footer p {
                 font-size: 1rem;
                 line-height: 1.5rem;
             }
         }
+
         @media screen and (max-width: 660px) {
-            .header-container, .intro-container, .service-section, .form-section{
+            .servicesButton button {
+                padding: 12px 12px;
+                font-size: 14px;
+            }
+
+            .servicesPart-section .Serve-servicelist ul {
+                color: #ffffff;
+                padding-left: 20px;
+            }
+
+            .servicesButton h3 {
+                font-size: 24px;
+            }
+
+            .servicesPart ul {
+                padding-left: 20px;
+            }
+
+            .tab {
+                font-size: 18px;
+            }
+
+            .tab-bar {
+                border-radius: 14px;
+            }
+
+            .servicesPart h5 {
+                font-size: 24px;
+                ;
+            }
+
+            .servicesPart h6 {
+                font-size: 16px;
+            }
+
+            .header-container,
+            .intro-container,
+            .service-section,
+            .servicesContainer,
+            .form-section {
                 max-width: 96%;
             }
-            .header-container{
+
+            .header-container {
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            header{
+
+            header {
                 height: auto;
                 padding: 10px 0;
             }
-            .header-statement{
+
+            .header-statement {
                 font-size: 0.8rem;
                 max-width: 100%;
                 line-height: 1rem;
                 margin: 0;
             }
-            header img{
+
+            header img {
                 margin: 0;
             }
-            nav .link-part{
+
+            nav .link-part {
                 justify-content: space-between;
             }
-            .intro-container{
+
+            .intro-container {
                 gap: 20px;
             }
-            .intro-box{
+
+            .intro-box {
                 margin: 0px 0 00px;
             }
-            .service-text{
+
+            .service-text {
                 flex: auto;
             }
-            nav a{
-                font-size: 0.9rem;
-            }
-            .service-section p, ul{
-                font-size: 1rem;
-            }
-            .intro-box h2, .service-section h2 {
-                font-size: 1.5rem;
-            }
-            .service-icon{
-                display: flex;
-                justify-content: center;
-                width: 100%;
+
+            nav a {
+                font-size: 12px;
             }
 
-            nav .link-part{
+            .service-section p,
+            ul {
+                font-size: 1rem;
+            }
+
+            .intro-box h2,
+            .service-section h2 {
+                font-size: 1.5rem;
+            }
+
+            nav .link-part {
                 gap: 6px;
                 max-width: 100%;
             }
         }
+
         @media screen and (max-width: 375px) {
-            header img{
+            .tab {
+                font-size: 16px;
+                padding: 20px 10px;
+            }
+
+
+            header img {
                 width: 100px;
                 max-width: 100px;
             }
-            .header-statement{
+
+            .header-statement {
                 font-size: 0.7rem;
                 line-height: 0.9rem;
             }
-            nav{
+
+            nav {
                 gap: 4px;
             }
-            nav a{
-                font-size: 0.8rem;
-            }
         }
-       
     </style>
 </head>
 
@@ -447,17 +699,16 @@
         <div class="header-container">
             <img src="the georgia cpa.png" alt="The Georgia CPA Logo">
             <div class="header-statement">
-                Offering a range of services to small and medium-sized businesses, both locally and remotely
+                Offering expert tax and accounting services to individuals and organizations both locally and remotely
             </div>
         </div>
     </header>
 
     <nav>
         <div class="link-part">
-        <a href="#who-we-help">Who We Help</a>
-        <a href="#services">Our Services</a>
-        <a href="#project-work">Project Work</a>
-        <a href="#contact">Contact</a>
+            <a href="#who-we-help">Who We Help</a>
+            <a href="#contact">Contact</a>
+            <a href="./Privacy.html" target="_blank">Privacy</a>
         </div>
     </nav>
 
@@ -465,134 +716,227 @@
     <section class="intro-container" id="who-we-help">
         <div class="intro-box">
             <h2>Who We Help</h2>
-            <p>Are you starting a small business or already running one? Do you need help managing your finances, staying compliant with tax laws, or setting a long-term financial strategy?</p>
-            <p>At The Georgia CPA, we specialize in helping small business owners and startups establish sound financial practices, so they can focus on growing their businesses. Whether you're in Atlanta or managing your business remotely, we're here to assist.</p>
-            <p>Plus, hablamos español. We offer services in both English and Spanish to better serve the needs of our diverse community.</p>
+            <p>Are you an individual or a business looking for reliable and expert financial guidance? At The Georgia
+                CPA, we specialize in providing personalized solutions to fit your unique needs, whether you’re local to
+                Atlanta or managing your finances remotely.</p>
+            <p>Hablamos español. We proudly offer services in both English and Spanish to support our diverse community.
+            </p>
         </div>
 
         <div class="intro-box">
             <h2>How It Works</h2>
-            <p>We offer a **free initial consultation** for all new clients. Whether you have a small project or need ongoing financial management, we’ve got you covered.</p>
-            <p>Our rates are **transparent and straightforward**—you can choose either an hourly rate or a fixed monthly rate, with no hidden fees. We believe in clear, upfront pricing.</p>
-            <p>From day one, you'll know exactly what to expect, and we'll guide you through every step of your financial journey.</p>
+            <p>We start with a free initial consultation to understand your needs. Our rates are clear—choose from
+                hourly or fixed pricing, with no hidden fees. From the beginning, we’ll guide you through every step of
+                your financial journey with transparency and care.</p>
         </div>
     </section>
 
-    <section id="services">
-        <!-- Service Category 1 -->
-        <div class="service-section">
-            <div class="service-text">
-                <h2>Basic Accounting & Bookkeeping</h2>
-                <p class="snippet">Keeping your business finances organized and up-to-date.</p>
-                <p>Accurate bookkeeping is the foundation of any successful business. It ensures that your financials are always in order, helping you avoid costly errors and stay compliant with laws.</p>
-                <ul>
-                    <li>Transaction Recording</li>
-                    <li>Account Reconciliation</li>
-                    <li>Monthly Financial Statements</li>
-                    <li>Expense Management</li>
-                    <li>Custom Financial Reports</li>
-                </ul>
+
+
+
+
+    <div class="servicesPart-section">
+        <div class="servicesContainer">
+
+            <div class="servicesButton">
+                <h3>Explore Our Services</h3>
+                <p>Choose the type of services tailored to your needs. Click on the options below to learn more:</p>
+                <div class="buttonPart">
+                    <button data-target="#individuals">For Individuals</button>
+                    <button data-target="#organizations">For Organizations</button>
+                </div>
             </div>
-            <div class="service-icon">
-                <img src="accounting.png" alt="Accounting Icon">
+
+
+            <div id="individuals">
+                <div class="servicesPart">
+                    <h5>Our Services for Individuals.</h5>
+                    <ul>
+                        <li class="serviceList">
+                            <strong>Tax Return Preparation</strong>
+                            <div class="serviceList-imgpart">
+                                <div>
+                                    <p>Get your taxes filed accurately and on time. We handle tax preparation for
+                                        individuals,
+                                        ensuring compliance with tax laws while optimizing your deductions and credits.
+                                        Whether
+                                        your tax situation is simple or complex, we've got you covered.</p>
+                                    <ul class="sublist">
+                                        <li>Federal and State Tax Filing</li>
+                                        <li>Maximizing Deductions and Credits</li>
+                                        <li>E-Filing for Fast Refunds</li>
+                                    </ul>
+                                </div>
+                                <div class="service-icon">
+                                    <img src="tax.png" alt="Tax Icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="serviceList">
+                            <strong>Prior-Year Returns Review</strong>
+                            <p>Identify errors and recover missed opportunities. We review your past tax returns for
+                                mistakes or overlooked deductions and credits, helping you recover potential refunds and
+                                avoid future issues.</p>
+                            <ul class="sublist">
+                                <li>Comprehensive Review of Past Returns</li>
+                                <li>Filing Amendments for Corrections</li>
+                                <li>IRS Compliance Checks</li>
+                            </ul>
+                        </li>
+                        <li class="serviceList">
+                            <strong>Tax Modeling and Strategy</strong>
+                            <div class="serviceList-imgpart">
+                                <div>
+                                    <p>Plan ahead to reduce your tax burden. With a forward-looking approach, we help
+                                        you
+                                        develop a tax strategy tailored to your financial goals, ensuring you're always
+                                        prepared
+                                        for tax season.</p>
+                                    <ul class="sublist">
+                                        <li>Personalized Tax Planning</li>
+                                        <li>Scenario-Based Tax Modeling</li>
+                                        <li>Strategic Tax Optimization</li>
+                                    </ul>
+                                </div>
+                                <div class="service-icon">
+                                    <img src="data.png" alt="data Icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="serviceList">
+                            <strong>Quarterly Estimate Calculations</strong>
+                            <div class="serviceList-imgpart">
+                                <div>
+                                    <p>Avoid surprises at tax time with accurate estimates. We calculate and prepare
+                                        quarterly
+                                        tax payments to keep you compliant and minimize penalties or interest.</p>
+                                    <ul class="sublist">
+                                        <li>Federal and State Estimated Tax Payments</li>
+                                        <li>Income Tracking for Accurate Projections</li>
+                                        <li>Payment Schedule Reminders</li>
+                                    </ul>
+                                </div>
+                                <div class="service-icon">
+                                    <img src="project.png" alt="project Icon">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Serve-servicelist">
+                    <h6>Who We Serve</h6>
+                    <ul>
+                        <li><strong>W-2 Employees:</strong> Simplify your taxes and optimize your returns.</li>
+                        <li><strong>Expats:</strong> Navigate dual-taxation and foreign income reporting.</li>
+                        <li><strong>Digital Creators:</strong> Track income and expenses to maximize deductions.</li>
+                        <li><strong>Rental Owners:</strong> Manage property income and deductions effectively.</li>
+                        <li><strong>Real Estate Investors:</strong> Plan for depreciation, 1031 exchanges, and more.
+                        </li>
+                        <li><strong>Business Owners and Entrepreneurs:</strong> Strategize taxes for your growing
+                            ventures.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div id="organizations">
+                <div class="servicesPart">
+                    <h5>Our Services for Organizations.</h5>
+
+                    <ul>
+                        <li class="serviceList">
+                            <strong>Accounting Setup and Bookkeeping</strong>
+                            <div class="serviceList-imgpart">
+                                <div>
+                                    <p>Lay a strong financial foundation for your business. We set up your accounting
+                                        systems and provide ongoing bookkeeping services to keep your finances accurate
+                                        and
+                                        organized.</p>
+                                    <ul class="sublist">
+                                        <li>Chart of Accounts Setup</li>
+                                        <li>Transaction Recording</li>
+                                        <li>Monthly Financial Reports</li>
+                                        <li>Bank and Account Reconciliations</li>
+                                    </ul>
+                                </div>
+                                <div class="service-icon">
+                                    <img src="accounting.png" alt="accounting Icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="serviceList">
+                            <strong>Payroll</strong>
+                            <div class="serviceList-imgpart">
+                                <div>
+                                    <p>Ensure your team is paid accurately and on time. We take the stress out of
+                                        payroll
+                                        management with streamlined processes and full compliance with tax regulations.
+                                    </p>
+                                    <ul class="sublist">
+                                        <li>Payroll Processing and Direct Deposit</li>
+                                        <li>Tax Withholdings and Filing</li>
+                                        <li>Year-End Employee Tax Statements</li>
+                                    </ul>
+                                </div>
+                                <div class="service-icon">
+                                    <img src="payroll.png" alt="accounting Icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="serviceList">
+                            <strong>Financial Compilation</strong>
+                            <div class="serviceList-imgpart">
+                                <div>
+                                    <p>Present a clear financial picture to stakeholders. We compile professional
+                                        financial
+                                        statements that provide transparency and help you make informed decisions.</p>
+                                    <ul class="sublist">
+                                        <li>Compiled Financial Statements</li>
+                                        <li>Quarterly/Annual Reports</li>
+                                        <li>Financial Projections and Budgets</li>
+                                    </ul>
+                                </div>
+                                <div class="service-icon">
+                                    <img src="compilation.png" alt="accounting Icon">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="serviceList">
+                            <strong>Taxes</strong>
+                            <div class="serviceList-imgpart">
+                                <div>
+                                    <p>Stay compliant and minimize your business tax burden. We handle your
+                                        organization's
+                                        tax filings and help you develop long-term tax strategies for growth.</p>
+                                    <ul class="sublist">
+                                        <li>Business Tax Preparation</li>
+                                        <li>Tax Deduction and Credit Optimization</li>
+                                        <li>IRS Support and Compliance</li>
+                                    </ul>
+                                </div>
+                                <div class="service-icon">
+                                    <img src="tax.png" alt="accounting Icon">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Serve-servicelist">
+                    <h6>Who We Serve</h6>
+                    <ul>
+                        <li><strong>Small Businesses:</strong> Streamline your accounting and reporting needs.</li>
+                        <li><strong>Startups:</strong> Establish a solid financial foundation for growth.</li>
+                        <li><strong>Established Organizations:</strong> Optimize your financial operations and tax
+                            strategy.</li>
+                        <li><strong>Nonprofits:</strong> Stay compliant and manage your unique financial
+                            requirements.</li>
+                        <li><strong>Entrepreneurs:</strong> Set up your financial systems to scale with your
+                            success.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <!-- Service Category 2 -->
-        <div class="service-section">
-            <div class="service-text">
-                <h2>Payroll Services</h2>
-                <p class="snippet">Pay your team on time, every time, without the hassle.</p>
-                <p>Managing payroll can be a time-consuming and complex task, especially with frequent changes in tax laws and regulations. Payroll errors can result in penalties and dissatisfied employees.</p>
-                <ul>
-                    <li>Payroll Processing</li>
-                    <li>Direct Deposit Setup</li>
-                    <li>Tax Withholdings and Filing</li>
-                    <li>Employee Benefits Management</li>
-                    <li>Year-End Tax Statements</li>
-                </ul>
-            </div>
-            <div class="service-icon">
-                <img src="payroll.png" alt="Payroll Icon">
-            </div>
-        </div>
-
-        <!-- Service Category 3 -->
-        <div class="service-section">
-            <div class="service-text">
-                <h2>Financial Compilation</h2>
-                <p class="snippet">Get professional, compiled financial statements for stakeholders.</p>
-                <p>Compiled financial statements are essential for presenting an accurate financial picture of your business to stakeholders, investors, or lenders. Regular financial reviews ensure you’re staying on the right track.</p>
-                <ul>
-                    <li>Compiled Financial Statements</li>
-                    <li>Quarterly/Annual Reports</li>
-                    <li>Financial Projections</li>
-                    <li>Budgeting and Forecasting</li>
-                </ul>
-            </div>
-            <div class="service-icon">
-                <img src="compilation.png" alt="Compilation Icon">
-            </div>
-        </div>
-
-        <!-- Service Category 4 -->
-        <div class="service-section">
-            <div class="service-text">
-                <h2>Tax Preparation & Filing</h2>
-                <p class="snippet">Optimize your business taxes with a long-term strategy.</p>
-                <p>Filing taxes for a business is no small feat. Missing a deduction or incorrectly reporting income can cost you valuable resources. Tax planning is essential to minimize liabilities and maximize savings.</p>
-                <ul>
-                    <li>Business Tax Filing</li>
-                    <li>Tax Strategy Development</li>
-                    <li>Tax Deductions & Credit Optimization</li>
-                    <li>Quarterly Tax Estimates</li>
-                    <li>IRS Compliance & Support</li>
-                </ul>
-            </div>
-            <div class="service-icon">
-                <img src="tax.png" alt="Tax Icon">
-            </div>
-        </div>
-
-        <!-- Service Category 5 -->
-        <div class="service-section">
-            <div class="service-text">
-                <h2>Data Analytics & Business Insights</h2>
-                <p class="snippet">Data-driven decisions to help your business grow.</p>
-                <p>In a world driven by data, businesses that fail to harness the power of analytics are at a competitive disadvantage. Financial data can reveal key insights into your business's performance.</p>
-                <ul>
-                    <li>Custom Financial Dashboards</li>
-                    <li>Key Performance Indicator (KPI) Tracking</li>
-                    <li>Financial Trend Analysis</li>
-                    <li>Scenario Planning & Forecasting</li>
-                    <li>Business Optimization Strategies</li>
-                </ul>
-            </div>
-            <div class="service-icon">
-                <img src="data.png" alt="Data Icon">
-            </div>
-        </div>
-
-    <!-- Project-Based Work Section - now styled as a service-section -->
-        <div class="service-section" id="project-work">
-            <div class="service-text">
-                <h2>Project Work for Businesses</h2>
-                <p>At The Georgia CPA, we are experts in handling complex projects, providing specialized accounting, financial planning, and data analytics solutions for medium-sized businesses.</p>
-                <p>Whether you're looking for help with dynamic forecasting, profitability analysis, or detailed cash flow projections, we can deliver the insights your business needs to succeed.</p>
-                <p>Our projects range from the smallest ad-hoc reports to full-scale strategic financial planning and modeling, all tailored to your specific needs.</p>
-                <ul>
-                    <li>Dynamic Forecasting and Projections</li>
-                    <li>Cash Flow Forecasting</li>
-                    <li>Customer Profitability and Trends Analysis</li>
-                    <li>Commissions and Salesforce Performance Analysis</li>
-                    <li>Inventory Changes and Product Profitability</li>
-                    <li>Scenario Planning and Financial Ratio Analysis</li>
-                </ul>
-            </div>
-            <div class="service-icon">
-                <img src="project.png" alt="Project Icon">
-            </div>
-    </section>
+    </div>
 
     <!-- Form Section -->
     <section class="form-section" id="contact-form">
@@ -617,25 +961,64 @@
     <footer id="contact">
         <div class="social-media">
             <a href="https://www.linkedin.com/company/thegeorgiacpa">
-                <img src="./linkedin.png" alt="linkdin-icon" />
+                <img src="./linkedin.png" alt="linkdin-icon">
             </a>
             <a href="https://www.instagram.com/thegeorgiacpa_/">
-                <img src="./instagram.png" alt="instgram" />
+                <img src="./instagram.png" alt="instgram">
             </a>
         </div>
-        <p>Contact us at: <a href="mailto: info@thegeorgiacpa.com">info@thegeorgiacpa.com</a> | <a href="tel:5743671936">574-367-1936</a>
-             <!-- |   <a href="https://www.linkedin.com/company/thegeorgiacpa" style="text-decoration: none;">
-            <img src="./linkedin.png" alt="linkdin-icon"  style="text-decoration: none;"/>
-        </a>
-        <a href="https://www.instagram.com/thegeorgiacpa_/">
-            <img src="./instagram.png" alt="instgram" />
-        </a>  -->
-        <br>
-            Address: 800 Battery Ave SE Suite 100, Atlanta, GA 30339 | © 2024 The Georgia CPA</p>
+        <p>Contact us at: <a href="mailto: info@thegeorgiacpa.com">info@thegeorgiacpa.com</a> | <a
+                href="tel: 5743671936">574-367-1936</a><br /> Address: 800 Battery Ave SE Suite 100, Atlanta, GA 30339 |
+            © 2024 The Georgia CPA</p>
     </footer>
 
 </body>
+<script>
+    document.querySelectorAll('.link-part a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.getElementById(targetId.substring(1));
+
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 800;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth',
+                    });
+                }
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.servicesButton button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    const offset = -100;
+                    const topPosition = targetElement.getBoundingClientRect().top + window.scrollY + offset;
+
+                    window.scrollTo({
+                        top: topPosition,
+                        behavior: 'smooth',
+                    });
+                }
+            });
+        });
+    });
+
+
+
+
+
+
+</script>
 
 </html>
-
-
